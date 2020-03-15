@@ -1,0 +1,49 @@
+$comments-board-color: #bdbdbd;
+$icon-color-hover: #1de9b6;
+
+p {
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+p:nth-child(1) {
+    margin-right: auto;
+}
+
+.comments-board {
+    background-color: $comments-board-color;
+    border-radius: 15px;
+    padding: 10px;
+    -webkit-box-shadow: 15px 15px 8px -8px rgba(0,0,0,0.4);
+    -moz-box-shadow: 15px 15px 8px -8px rgba(0,0,0,0.4);
+    box-shadow: 15px 15px 8px -8px rgba(0,0,0,0.4);
+    margin-bottom: 1rem;
+}
+
+.navigation-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navigation-container > button {
+    margin-left: 1rem;
+    background-color: $comments-board-color;
+}
+
+.navigation-container > button:disabled > mat-icon {
+    color: white;
+}
+
+mat-icon {
+    display: block;
+    transform: scale(1.5);
+    transition: color 0.25s;
+}
+
+.navigation-container > mat-icon:hover {
+    color: $icon-color-hover;
+}
+

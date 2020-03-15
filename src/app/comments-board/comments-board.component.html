@@ -1,0 +1,12 @@
+<div class="comments-board">
+    <div *ngFor="let comment of slicedComments" class="comments-container">
+        <comment-card [name]="comment.name" [email]="comment.email" [body]="comment.body"></comment-card>
+    </div>
+    <div class="navigation-container">
+        <p>{{ currentPage }} - {{ lastPage }}</p>
+        <button mat-fab (click)="goToPage(1)" [disabled]="currentPage == 1"><mat-icon>first_page</mat-icon></button>
+        <button mat-fab (click)="updateCurrentPage(-1)" [disabled]="currentPage == 1"><mat-icon>navigate_before</mat-icon></button>
+        <button mat-fab (click)="updateCurrentPage(1)" [disabled]="currentPage == lastPage"><mat-icon>navigate_next</mat-icon></button>
+        <button mat-fab (click)="goToPage(lastPage)" [disabled]="currentPage == lastPage"><mat-icon>last_page</mat-icon></button>
+    </div>
+</div> 

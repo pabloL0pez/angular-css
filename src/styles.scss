@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+$scroll-bar-track: #80cbc4;
+$scroll-bar-thumb: #009688;
+$scroll-bar-thumb-hover: #00695c;
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: $scroll-bar-track;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: $scroll-bar-thumb;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: $scroll-bar-thumb-hover;
+}

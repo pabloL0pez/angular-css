@@ -1,0 +1,93 @@
+$separator-color: #1de9b6;
+$card-color: #e0e0e0;
+$thumbs-up-color: #1de9b6;
+$thumbs-down-color: #e91e63;
+$comment-color: #303f9f;
+
+h2, h3, h4 {
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    display: block;
+    border: 0;
+    border-top: 1px solid $separator-color;
+    margin: 0 0 0.5rem 0;
+    padding: 0;
+}
+
+p {
+    font-weight: lighter;
+    font-size: 14px;
+    color: black;
+}
+
+.card-container {
+    background-color: $card-color;
+    border-radius: 15px;
+    padding: 10px;
+    -webkit-box-shadow: 15px 15px 8px -8px rgba(0,0,0,0.4);
+    -moz-box-shadow: 15px 15px 8px -8px rgba(0,0,0,0.4);
+    box-shadow: 15px 15px 8px -8px rgba(0,0,0,0.4);
+    margin-bottom: 1rem;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-body {
+    color: black;
+    font-size: 16px;
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.card-footer > mat-icon {
+    color:#757575;
+    font-size: 36px;
+    transition: color 0.25s;
+    margin-right: 1rem;
+}
+
+.card-footer > p {
+    margin-right: 0.25rem;
+}
+
+.card-footer > mat-icon:nth-child(1) {
+    margin-right: auto;
+}
+
+.card-footer > mat-icon:hover {
+    cursor: pointer;
+}
+
+.card-footer > mat-icon:hover:nth-child(1) {
+    color: $comment-color;
+}
+
+.card-footer > p:nth-child(2) {
+    color: $thumbs-up-color
+}
+
+.card-footer > mat-icon:hover:nth-child(3)  {
+    color: $thumbs-up-color;
+}
+
+.card-footer > p:nth-child(4) {
+    color: $thumbs-down-color
+}
+
+.card-footer > mat-icon:hover:nth-child(5) {
+    color: $thumbs-down-color
+}
