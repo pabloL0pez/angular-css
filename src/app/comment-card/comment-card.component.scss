@@ -41,9 +41,15 @@ p {
     align-items: center;
 }
 
+.card-header > .card-subject {
+    padding: 0 15px 0 0;
+    margin-bottom: 0.25rem;
+}
+
 .card-body {
     color: black;
     font-size: 16px;
+    margin-bottom: 0.25rem;
 }
 
 .card-footer {

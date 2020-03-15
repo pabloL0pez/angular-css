@@ -70,6 +70,7 @@ body {
     background-color: $background-navbar;
     position: fixed;
     display: flex;
+    z-index: 1;
 }
 
 .navbar-list {
