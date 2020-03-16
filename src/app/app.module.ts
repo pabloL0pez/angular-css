@@ -51,6 +51,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { CommentsBoardComponent } from './comments-board/comments-board.component';
+import { DataGridComponent } from './data-grid/data-grid.component';
 
 const routes: Routes = [
   {
@@ -65,7 +66,8 @@ const routes: Routes = [
     AppComponent,
     CommentCardComponent,
     HomeComponent,
-    CommentsBoardComponent
+    CommentsBoardComponent,
+    DataGridComponent
   ],
   imports: [
     RouterModule.forRoot(routes),

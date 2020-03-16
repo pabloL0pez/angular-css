@@ -10,3 +10,10 @@ export interface Comment {
     email: string;
     body: string;
 }
+
+export interface GridItem {
+    text: string;
+    imageUrl: string;
+    rows: number;
+    columns: number;
+}
